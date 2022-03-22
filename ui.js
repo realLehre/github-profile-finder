@@ -39,5 +39,9 @@ class UI{
         div.textContent = message;
 
         const container = document.querySelector('.searchContainer');
+
+        const search = document.querySelector('.search');
+
+        container.insertBefore(div, search);
     }
 }
