@@ -14,7 +14,8 @@ class GitHub{
         const repos = await profileRepos.json();
 
         return{
-            profile
+            profile,
+            repos
         }
     }
 }
