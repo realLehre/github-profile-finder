@@ -44,7 +44,11 @@ class UI{
 
         const search = document.querySelector('.search');
 
-        container.insertBefore(div, search);      
+        container.insertBefore(div, search);  
+        
+        setTimeout(() => {
+            this.clearError();
+        }, 2000)
     }
 
     clearError(){
