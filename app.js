@@ -7,9 +7,14 @@ searchUser.addEventListener('keyup', (e) => {
     userName = e.target.value;
 
     if(userName) {
-        github.getUser(userName);
+        github.getUser(userName)
+            .then(data => console.log(userData))
 
-        
+        if(github.getUser().message === 'Not Found') {
+            console.log(1);
+        } else {
+
+        }
     } else {
 
     }
