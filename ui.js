@@ -32,7 +32,7 @@ class UI{
     }
 
     showAlert(message, className){
-        // this.clearError();
+        this.clearError();
 
         const div = document.createElement('div');
 
@@ -44,18 +44,16 @@ class UI{
 
         const search = document.querySelector('.search');
 
-        container.insertBefore(div, search);
-
-        
+        container.insertBefore(div, search);      
     }
 
-    // clearError(){
-    //     const currentAlert = document.querySelector('.alert');
+    clearError(){
+        const currentAlert = document.querySelector('.alert');
 
-    //     if(currentAlert){
-    //         currentAlert.remove();
-    //     }
-    // }
+        if(currentAlert){
+            currentAlert.remove();
+        }
+    }
 
     clearUser(){
         this.profile.innerHTML = '';
