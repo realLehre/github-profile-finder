@@ -15,7 +15,7 @@ searchUser.addEventListener('keyup', (e) => {
                 if(data.profile.message === 'Not Found') {
                     // show error
                 } else {
-
+                    ui.showUser(data);
                 }
             })    
     } else {
