@@ -5,5 +5,7 @@ const searchUser = document.getElementById('searchUser');
 searchUser.addEventListener('keyup', (e) => {
     userName = e.target.value;
 
-    console.log(userName);
+    if(userName){
+        console.log(1);
+    }
 })
