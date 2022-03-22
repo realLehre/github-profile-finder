@@ -6,6 +6,6 @@ searchUser.addEventListener('keyup', (e) => {
     userName = e.target.value;
 
     if(userName){
-        console.log(1);
+        
     }
 })
