@@ -35,5 +35,9 @@ class UI{
         const div = document.createElement('div');
 
         div.classList.add(className);
+
+        div.textContent = message;
+
+        const container = document.querySelector('.searchContainer');
     }
 }
