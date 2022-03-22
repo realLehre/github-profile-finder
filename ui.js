@@ -48,9 +48,10 @@ class UI{
                     </div>
                 </div>
                 </div>
-            `
+            `;
         })
         
+        document.getElementById('repos').innerHTML = output;
     }
 
     showAlert(message, className){
