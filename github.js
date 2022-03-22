@@ -9,6 +9,7 @@ class GitHub{
 
         const profile = await profileResponse.json();
 
+        console.log(profile);
         return{
             profile
         }
