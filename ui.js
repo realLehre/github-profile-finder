@@ -49,6 +49,10 @@ class UI{
 
     clearError(){
         const currentAlert = document.querySelector('.alert');
+
+        if(currentAlert){
+            currentAlert.remove();
+        }
     }
 
     clearUser(){
