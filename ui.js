@@ -43,6 +43,10 @@ class UI{
         const search = document.querySelector('.search');
 
         container.insertBefore(div, search);
+
+        if(div){
+            div.remove()
+        }
     }
 
     clearUser(){
