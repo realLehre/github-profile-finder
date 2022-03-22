@@ -31,6 +31,18 @@ class UI{
         `
     }
 
+    showRepos(repos){
+        let output = '';
+
+        console.log(repos);
+        repos.forEach(repo =>{
+            output += `
+
+            `
+        })
+        
+    }
+
     showAlert(message, className){
         this.clearError();
 
