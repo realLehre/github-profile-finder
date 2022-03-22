@@ -8,9 +8,9 @@ searchUser.addEventListener('keyup', (e) => {
 
     if(userName) {
         github.getUser(userName)
-            .then(data => console.log(userData))
+            .then(data => data)
 
-        if(github.getUser().message === 'Not Found') {
+        if(data.profile.message === 'Not Found') {
             console.log(1);
         } else {
 
