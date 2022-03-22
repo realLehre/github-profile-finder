@@ -1,6 +1,6 @@
 class UI{
     constructor() {
-        profile = document.getElementById('profile');
+        this.profile = document.getElementById('profile');
     }
 
     showUser(user){
