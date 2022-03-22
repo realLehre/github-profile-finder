@@ -4,6 +4,8 @@ class UI{
     }
 
     showUser(user){
-        console.log(user);
+        this.profile.innerHTML = `
+            
+        `
     }
 }
