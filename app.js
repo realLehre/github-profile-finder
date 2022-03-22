@@ -20,6 +20,6 @@ searchUser.addEventListener('keyup', (e) => {
                 }
             })    
     } else {
-
+        ui.clearUser();
     }
 })
