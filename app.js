@@ -1,6 +1,9 @@
 // Init github
 const github = new GitHub();
 
+// init UI
+const ui = new UI();
+
 const searchUser = document.getElementById('searchUser');
 
 searchUser.addEventListener('keyup', (e) => {
