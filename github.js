@@ -8,7 +8,11 @@ class GitHub{
         const profileResponse = await fetch(`https://api.github.com/users/${user}?'client_id=${this.client_id}&'client_secret=${this.client_secret}'`);
 
         const profile = await profileResponse.json();
-        
+
+        const profileRepos = await fetch(`https://api.github.com/users/${user}/repos?'client_id=${this.client_id}&'client_secret=${this.client_secret}'`)
+
+        const repos = await profileRepos.json();
+
         return{
             profile
         }
