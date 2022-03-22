@@ -34,10 +34,6 @@ class UI{
     showAlert(message, className){
         const div = document.createElement('div');
 
-        if(div){
-            div.remove()
-        }
-
         div.className = className;
 
         div.textContent = message;
@@ -49,6 +45,10 @@ class UI{
         container.insertBefore(div, search);
 
         
+    }
+
+    clearError(){
+        const currentAlert = document.querySelector('.alert');
     }
 
     clearUser(){
