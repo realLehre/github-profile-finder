@@ -32,6 +32,8 @@ class UI{
     }
 
     showAlert(message, className){
+        // this.clearError();
+
         const div = document.createElement('div');
 
         div.className = className;
@@ -47,13 +49,13 @@ class UI{
         
     }
 
-    clearError(){
-        const currentAlert = document.querySelector('.alert');
+    // clearError(){
+    //     const currentAlert = document.querySelector('.alert');
 
-        if(currentAlert){
-            currentAlert.remove();
-        }
-    }
+    //     if(currentAlert){
+    //         currentAlert.remove();
+    //     }
+    // }
 
     clearUser(){
         this.profile.innerHTML = '';
